@@ -24,7 +24,7 @@ VOLUME /fastqc/data
 RUN apt-get update
 
 # Install tools
-RUN apt-get install --yes openjdk-7-jre-headless unzip
+RUN apt-get install --yes openjdk-8-jre-headless unzip
 
 # Download the start.sh file
 ADD ${STARTFILE} /fastqc/
